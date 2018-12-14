@@ -31,9 +31,9 @@ mongoose.connect("mongodb://localhost/unit18Populater", { useNewUrlParser: true 
 
 // Routes
 
-app.get('/', function(req, res){
-    res.sendfile('index.html', { root: __dirname + "/relative_path_of_file" } );
-});
+// app.get('/', function(req, res){
+//     res.sendfile('index.html', { root: __dirname + "./public/index.html" } );
+// });
 
 // A GET route for scraping the echoJS website
 app.get("/scrape", function (req, res) {
@@ -56,9 +56,7 @@ app.get("/scrape", function (req, res) {
             result.link = $(element).find('.story-link').attr('href');
 
             result.img = $(element).find('.wide-thumb').find('img').attr('src');
-
-
-            
+           
 
             // Create a new Article using the `result` object built from scraping
             db.Article.create(result)
