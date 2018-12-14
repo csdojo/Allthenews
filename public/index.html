@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.0.0/materia/bootstrap.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+SC" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Scraping With Mongoose</title>
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">Home
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/saved">Saved Articles</a>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-danger scrape-new">SCRAPE NEW ARTICLES!</a>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-danger clear">CLEAR ARTICLES!</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="jumbotron text-center">
+    <div class="overlay">
+    </div>
+    <div class="background-image">
+    </div>
+    <div class="caption">
+      <h1>Mongo Scraper</h1>
+      <p>New York Times Edition</p>
+    </div>
+  </div>
+  <div class="container-fluid article-container">
+    <div id="articles"></div>
+  </div>
+
+
+  <div id="notes"></div>
+
+  <footer class="footer">
+    <div class="container">
+      <p>New York Times Mongo Scraper</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
