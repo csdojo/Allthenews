@@ -54,13 +54,31 @@
   </div>
 
 
+
+
   <div id="notes"></div>
+
+  <div class="modal fade" id="postModal" tabindex="-1" role="dialog" aria-labelledby="postModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <textarea id="postInput" rows="6" placeholder="&nbsp; Write your post here"></textarea>
+          </div>
+          <div class="modal-footer">
+            <input type="submit" class="postSubmit" value="Submit">
+          </div>
+        </div>
+      </div>
+    </div>
+
 
   <footer class="footer">
     <div class="container">
       <p>New York Times Mongo Scraper</p>
     </div>
   </footer>
+
+  
 
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>

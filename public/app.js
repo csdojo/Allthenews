@@ -6,12 +6,15 @@ $.getJSON("/articles", function(data) {
       // Display the apropos information on the page
       $("#articles").append("<div data-id='" + data[i]._id + "'class = 'card'>" + "<div class='card-header'>" 
       + "<h3>" + "<a class='article-link' target='_blank' rel = 'noopener noreferrer' href = '" + data[i].link + "'>" 
-      + data[i].title + "</a>" + "<a class ='btn btn-success save'>" + "Save Article" + "</a>" + "</h3>"
-      +"</div>" + "<div class = 'card-body'>" + data[i].body + "</div>");
+      + data[i].title + "</a>" + "<a style = 'margin-left:30px' class ='btn btn-success' data-toggle ='modal' data-target ='#postModal'>" + "Add a Note" + "</a>" + "<a class ='btn btn-success save'>" + "Save Article" + "</a>" + "</h3>"
+      +"</div>" + "<div class = 'card-body'>" + "<p>" + data[i].body + "</p>" + "</div>");
     }
     // "<div class = 'image'>" + "<img src = '" + data[i].img + "'>" +"</div>"
+    // "<button type='button' class='btn bg-main-color btn-lg text-center'data-toggle ='modal' data-target ='#postModal' >" 
+    //   + "Add a Note" + "</button>"
   });
   
+
   
   // Whenever someone clicks a p tag
   $(document).on("click", "p", function() {

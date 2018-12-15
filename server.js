@@ -31,9 +31,6 @@ mongoose.connect("mongodb://localhost/unit18Populater", { useNewUrlParser: true 
 
 // Routes
 
-// app.get('/', function(req, res){
-//     res.sendfile('index.html', { root: __dirname + "./public/index.html" } );
-// });
 
 // A GET route for scraping the echoJS website
 app.get("/scrape", function (req, res) {

@@ -16,10 +16,6 @@ var ArticleSchema = new Schema({
     type: String,
     required: true
   },
-  img: { 
-      data: Buffer, 
-      contentType: String
-     },
   body:{
     type: String,
     required: true
